@@ -9,7 +9,7 @@ const Bookshelf = () => {
     const [newBook, setNewBook] = useState({ title: '', author: ''})
 
     const handleInputChange = (event) => {
-        setFormData({ ...newBook, [event.target.name]: event.target.value})
+        setNewBook({ ...newBook, [event.target.name]: event.target.value})
     };
 
     const handleSubmit = (event) => {
